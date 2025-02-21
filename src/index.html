@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>유효성 검사</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="validator.js"></script>
-  </head>
 
-  <body>
-    유효성 검사
-    <!-- 과제 도우미에 나온 코드 그대로 실습하세요 -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>유효성 검사</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="validator.js"></script>
+</head>
 
-    <script src="script.js"></script>
-  </body>
+<body>
+  <h1>SIGN UP</h1>
+  <!-- 과제 도우미에 나온 코드 그대로 실습하세요 -->
+
+  <div class="container">
+    <fieldset>
+      <label>ID</label>
+      <input type="text" id="username" />
+    </fieldset>
+
+    <fieldset>
+      <label>CREATE PASSWORD</label>
+      <input type="password" id="password" />
+    </fieldset>
+
+    <fieldset>
+      <label>CONFIRM PASSWORD</label>
+      <input type="password" id="password-retype" />
+    </fieldset>
+
+    <div class="alert-div">
+      <div class="failure-message hide failed">아이디는 네 글자 이상이어야 합니다</div>
+      <div class="success-message hide success">사용할 수 있는 아이디입니다</div>
+      <div class="mismatch-message hide failed">두 비밀번호가 일치하지 않습니다</div>
+    </div>
+
+    <fieldset>
+      <button>CREATE ACCOUNT</button>
+    </fieldset>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

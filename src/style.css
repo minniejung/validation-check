@@ -1,3 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+  color: #000;
+}
+
+body {
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+button {
+  cursor: pointer;
+}
+
 .hide {
   display: none;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+fieldset > label {
+  width: 100px;
+  white-space: preserve nowrap;
+  font-size: 11px;
+  padding-left: 4px;
+}
+
+input {
+  background-color: #fff;
+  height: 36px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.alert-div {
+  margin: -0.5rem 0;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.alert-div .failed {
+  color: red;
+}
+
+.alert-div .success {
+  color: green;
+}
+
+fieldset > button {
+  background-color: #fff;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  width: 100%;
+  font-weight: bold;
+}
+
+fieldset > button:hover {
+  background-color: rgb(255, 236, 210);
 }
